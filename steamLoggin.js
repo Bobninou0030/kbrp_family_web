@@ -13,7 +13,7 @@ app.use(require('express-session')({
 
 app.get('/auth/discordId', (req, res) => {
     if (req.query.token === undefined) {
-        res.redirect('/auth/steam/404')
+        res.redirect('/404')
         return;
     };
 
